@@ -69,5 +69,45 @@ DELETE /api/:user_id
 response = {}
 ```
 
+
 ### Production server
-`BASE_URL=`
+
+```js
+GET https://zuri-stage-2-1rmd.onrender.com/api/6504c74f2525553f0b036c50
+
+response = {
+  "message": "ok",
+  "user": {
+    "_id": "6504c74f2525553f0b036c50",
+    "fullName": "David Bodunrin",
+    "__v": 0
+  }
+}
+``` 
+
+```js
+PATCH https://zuri-stage-2-1rmd.onrender.com/api/6504c74f2525553f0b036c50
+req.body = "James Bodunrin"
+
+response = { 
+  "message": "ok",
+  "user": {
+    "_id": "6504c74f2525553f0b036c50",
+    "fullName": "James Bodunrin",
+    "__v": 0
+  }
+}
+``` 
+
+```js
+DELETE https://zuri-stage-2-1rmd.onrender.com/api/6504c74f2525553f0b036c50
+
+response = {}
+
+```
+
+`BASE_URL=https://zuri-stage-2-1rmd.onrender.com/api`
+
+## UML DIAGRAM
+
+([UML DIAGRAM](https://excalidraw.com/#json=lIUCy6YEO7hYDQmJR7WS0,LUkHzDz6KYx5HcVh5BO2bw))
